@@ -1,5 +1,8 @@
+// Two sum - leetcode question.
+// Problem link - https://leetcode.com/problems/two-sum/
 
 // approach - using hash table.
+
 // we can use hashmap to store the values with index and while every iteration we can check if the target minus value is available
 // in the hash table or not.
 
