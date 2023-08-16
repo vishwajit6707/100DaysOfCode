@@ -1,0 +1,26 @@
+we can have method body in interface. But we need to make it default method.method body allowed whe it id default method
+java.
+
+interface Destination {  
+void travel();  
+default void msg(){System.out.println("default method");}  
+}  
+class Bus implements Destination{  
+public void drive(){System.out.println("driving");}  
+}  
+class Way{  
+public static void main(String args[]){  
+Destination d=new Bus();  
+d.drive();  
+d.travel();  
+}}  
+
+
+
+
+Interface fields are public, static and final by default, and the methods are public and abstract.
+int a=10; == public static final int a=10
+and methods are
+public abtract void travel(){
+
+}
