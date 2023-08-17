@@ -1,0 +1,3 @@
+The logical (&& ||) operator doesn't check the second condition if the first condition is true. It checks the second condition only if the first one.
+
+The bitwise (& |) operator always checks both conditions whether first condition.
