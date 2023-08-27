@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    HashSet<Integer> set= new HashSet();
+    set.add(7);
+    set.add(57);
+    set.add(8);
+    set.add(9);
+    set.add(100);
+    //set.add(9); duplicate value
+    
+    set.remove(9);
+    
+    System.out.println(set);
+    
+    if (set.contains(1)){
+      
+      System.out.println("yes");
+      
+    } 
+    Iterator it=set.iterator();
+    
+    while(it.hasNext()){
+      System.out.println(it.next());
+    }
+    
+    // if (!set.contains(1)){
+    //   System.out.println("no");
+    // }
+    System.out.println("the size of set"+set.size());//3 it does'nt take duplicate
+    
+    
+    
+  }
+}
