@@ -1,17 +1,15 @@
 // Seat Reservation Manager
 // https://leetcode.com/problems/seat-reservation-manager
-
 class SeatManager {
     public PriorityQueue<Integer> queue = new PriorityQueue<>();
+    int start = 1;
     public SeatManager(int n) {
-        for(int i =1; i<=n ; i++){
-            queue.add(i);
-        }
+        queue.add(1);
     }
     public int reserve() {
+        if(queue.isEmpty()) queue.add(++start);
         return queue.poll();
     }
-    
     public void unreserve(int seatNumber) {
         queue.add(seatNumber);
     }
